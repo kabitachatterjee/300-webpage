@@ -1,0 +1,79 @@
+/* Body Tag */
+body {
+  background-color: black;
+  color: gray;
+  font-weight: 300;
+}
+
+/* Nav Header */
+#nav-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 47px;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 900;
+}
+
+/* All spans under #nav-header */
+#nav-header > span {
+  font-family: sans-serif;
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  margin: 14px 10px;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+}
+
+/* Visited links under #nav-header */
+#nav-header a, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/* Currently active link */
+#nav-header a.active {
+  font-weight: bold;
+}
+
+/* Hero poster */
+#hero {
+  background-image: url(300-hero.jpg);
+  background-size: cover;
+  height: 188px;
+}
+
+/* Text narrative */
+.narrative {
+  margin-top: 25px;
+  font-size: 16px;
+}
+
+/* YouTube player iFrame */
+#ytplayer {
+  margin-top: 25px;
+  width: 100%;
+  height: 210px;
+}
+
+/* BELOW IS THE CSS STYLING FOR THE SWIPEABLE
+   IMAGE GALLERY WE DIDN'T COVER THE 1ST WEEKEND.
+   FEEL FREE TO LEAVE THIS FOR NEXT SATURDAY
+   WHEN WE WILL TALK ABOUT HOW TO BUILD IT */
+
+/* Horizontal image gallery */
+.gallery {
+  margin: 25px auto;
+  overflow-x: scroll;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.gallery img {
+  width: 90%;
+}
+
+.gallery::-webkit-scrollbar { 
+  display: none; 
+}
